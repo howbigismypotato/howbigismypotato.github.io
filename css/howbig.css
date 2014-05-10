@@ -1,0 +1,167 @@
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 9:05:33 Dec 8, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 22:17:13 May 8, 2014.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+body {
+    font: small "Trebuchet MS", Verdana, Arial, Sans-serif;
+
+    color: #333;
+    background-color: #ffffcc;
+    margin: 0px;
+}
+
+div#container {
+    margin-left: 10em;
+    margin-right: 10em;
+    padding: 1em;
+    background-color: #ffffe0;
+}
+
+#banner {
+    padding: 5pt;
+    margin-right: 16em;
+    border: 1px solid black;
+    background-color: yellow;
+    background-image: url( '../images/scale.gif' );
+    background-position: bottom left;
+    background-repeat: repeat-x;
+}
+
+#banner .links {
+    text-align: right;
+}
+
+#banner a {
+    color: black;
+    text-decoration: none;
+}
+
+#banner a:hover {
+    text-decoration: underline;
+}
+
+#banner h1 {
+    margin-top: 0pt;
+    margin-bottom: 17pt;
+}
+
+#spaceUnderneathBanner {
+    height: 3em;
+}
+
+.tabset {
+    padding: 0;
+    border-collapse: collapse;
+}
+
+.tabset tr {
+    margin: 0;
+    padding: 0;
+}
+
+.tabset tr td {
+    background-image: url('../images/bg_tab_shadowed2.gif');
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-color: #e3e3c2;
+    margin: 0;
+    padding: 0.6em;
+    height: 2em;
+}
+
+.tabset tr td.selected {
+    background-image: none;
+    background-color: #f0f0cc;
+}
+
+.tabset tr td.spacer {
+    background: #ffffe0;
+    padding: 0.3em;
+}
+
+div.tab {
+    background-color: #f0f0cc;
+    padding: 1em;
+}
+
+p {
+    margin-top: 0em;
+    margin-bottom: 0.6em;
+}
+
+p.warning {
+    color: red;
+}
+
+div.dragspace {
+    background-color: white;
+    padding: 1em;
+    padding-bottom: 10em;
+}
+
+div.results {
+    background-image: url('../images/bg_results2.gif');
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 1em;
+    width: 15em;
+    right: 11em;
+    background-color: #00339a;
+    color: white;
+}
+
+div.results h2 {
+    margin-top: 0.3em;
+    margin-bottom: 0.1em;
+    text-align: center;
+}
+
+div.results table {
+    width: 100%;
+    color: white;
+}
+
+td.label {
+    text-align: right;
+    font-size: 1em;
+    padding-right: 0.5em;
+    width: 50%;
+    height: 2em;
+}
+
+td.hover {
+    background-color: yellow;
+}
+
+td.changing {
+    font-size: 1.5em;
+}
+
+tr.explained td {
+    color: yellow;
+}
+
+span.dragme {
+    background-image: url('../images/dragme.gif');
+    background-repeat: no-repeat;
+    position:absolute;
+    width:60;
+    height:50;
+}
+
+div.explain {
+    display: none;
+    position: absolute;
+    background-color: #ffffcc;
+    border: 1px dashed black;
+    padding: 0.5em;
+}

@@ -1,0 +1,129 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link type="text/css" rel="stylesheet" href="./css/banner-styles.css">
+
+    <title>how big is my potato?</title>
+    <link type="text/css" rel="StyleSheet" href="css/howbig.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <script type="text/javascript" src="js/howbig.js"></script>
+    <meta name="google-site-verification" content="pM_QEZay5OR9Y_cyE2YjoeBbQvwmfxzrSsm8FHf6LK8">
+</head>
+
+<body>
+
+<div id="container">
+    <div id="banner">
+        <div class="links">
+            <a href="http://building-hbimp.blogspot.com/2006/09/feedback.html">feedback</a> |
+            <a href="http://building-hbimp.blogspot.com/">blog</a> |
+            <a href="http://building-hbimp.blogspot.com/2006/09/disclaimer.html">disclaimer</a>
+        </div>
+
+        <h1>how big is my potato?</h1>
+    </div>
+
+    <p id="spaceUnderneathBanner"></p>
+
+    <div class="results">
+        <h2>Results</h2>
+        <table id="results_calibrate" style="display: block;">
+            <tbody><tr onmouseover="explain(this)" onmouseout="unexplain(this)" class="">
+                <td class="label">Pixel size</td><td class="changing"><span id="pixelSizeDisplay">0.263mm</span></td>
+            </tr>
+        </tbody></table>
+        <table id="results_measure" style="display: none;">
+            <tbody><tr onmouseover="explain(this)" onmouseout="unexplain(this)">
+                <td class="label">Mass</td><td class="changing"><span id="potatoWeight">67g</span></td>
+            </tr>
+            <tr onmouseover="explain(this)" onmouseout="unexplain(this)">
+                <td class="label">Cooking Time</td><td class="changing"><span id="cookingTime">1:06</span></td>
+            </tr>
+            <tr onmouseover="explain(this)" onmouseout="unexplain(this)">
+                <td class="label">Energy</td><td class="changing"><span id="potatoEnergy">53kCal</span></td>
+            </tr>
+        </tbody></table>
+    </div>
+
+    <table id="tabset_calibrate" class="tabset" style="display: block;">
+        <tbody><tr>
+            <td class="selected"><span class="step1">Calibrate</span></td>
+            <td class="spacer"></td>
+            <td><a href="javascript:startMeasuring()"><span class="step2">Measure</span></a></td>
+        </tr>
+    </tbody></table>
+    <div id="div_calibrate" class="tab" style="display: block;">
+
+        <p>Hold up a credit card to the screen, and drag the red handle until the outline is the same size.</p>
+        <p class="warning">Warning! This may damage your computer, see
+            <a href="http://building-hbimp.blogspot.com/2006/10/warning-damage.html">warnings</a>.
+        </p>
+
+        <div class="dragspace">
+            <img id="ccard" src="images/ccard.png" alt="Use the mouse to resize this outline so that it matches the size of a credit card">
+            <span id="dragme_calibrate" class="dragme" style="left: 494px; top: 526px;"></span>
+        </div>
+    </div>
+
+    <table id="tabset_measure" class="tabset" style="display: none;">
+        <tbody><tr>
+            <td><a href="javascript:goBackToCalibration()"><span class="step1">Calibrate</span></a></td>
+            <td class="spacer"></td>
+            <td class="selected"><span class="step2">Measure</span></td>
+        </tr>
+    </tbody></table>
+    <div id="div_measure" class="tab" style="display: none;">
+
+        <p>Hold up a real potato to the screen, and stretch the potato on screen until it's the same size.</p>
+        <p class="warning">Warning! This may damage your computer, see
+            <a href="http://building-hbimp.blogspot.com/2006/10/warning-damage.html">warnings</a>.
+        </p>
+
+        <div class="dragspace">
+            <img id="potato" src="images/potato.jpg" width="235" alt="Use the mouse to resize this outline so that it matches the size of a potato">
+            <span id="dragme_measure" class="dragme"></span>
+        </div>
+    </div>
+</div>
+
+<div id="explain_pixelSizeDisplay" class="explain" style="display: none; left: 952px; top: 78px; width: 175px;">
+    Width or height of one pixel on your monitor, deduced from the number of pixels equivalent to the dimensions of a credit card.
+</div>
+
+<div id="explain_potatoWeight" class="explain">
+    How much we think it weighs.
+</div>
+
+<div id="explain_cookingTime" class="explain">
+    Time to bake a potato of this size in a 900W microwave.
+</div>
+
+<div id="explain_potatoEnergy" class="explain">
+    Nutritional energy from eating a potato this size.
+</div>
+
+<script type="text/javascript">
+    registerListeners();
+
+    goBackToCalibration();
+    recalculate();
+</script>
+<script type="text/javascript" for="document" event="onmousemove()">
+    drag_onmousemove();
+</script>
+<script type="text/javascript" for="document" event="onmouseup()">
+    drag_onmouseup();
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-731282-1', 'howbigismypotato.com');
+  ga('send', 'pageview');
+</script>
+
+</body>
+</html>
